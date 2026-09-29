@@ -4,16 +4,21 @@ import java.util.ArrayList;
 
 public class AggregationDEMO {
     public static void main(String[] args){
-        Student student = new Student("1001" , "Thou rayuth");
-        Student student1 = new Student("1002" , "Thou narong");
-        List<Student> students = new ArrayList<>();
-        students.add(student);
-        students.add(student1);
+        Teacher teacher1 =
+                new Teacher("Dara", "25", "Java");
 
-        School school = new School("Rupp");
-        school.addStudent(students);
+        Teacher teacher2 =
+                new Teacher("Sokha", "30", "Database");
 
-        school.displayStudent();
+        List<Teacher> teachers = new ArrayList<>();
+
+        teachers.add(teacher1);
+        teachers.add(teacher2);
+
+        Department department =
+                new Department("IT", "Building A", teachers);
+
+        department.displayInfoDepartment();
 
     }
 }
