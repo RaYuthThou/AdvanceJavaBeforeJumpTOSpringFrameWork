@@ -5,6 +5,8 @@ public class MultipleExceptionDEMO {
         String[] name = {"dara" , "rith" , "Kunthea"};
         int x = 5;
         int y = 0;
+//        implicit == Auto
+//        explicit == manul
         try{
             String name1 = name[3];
             int nums = x /y;
